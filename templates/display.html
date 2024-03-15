@@ -1,0 +1,17 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>Population Statistics</title>
+    </head>
+    <body>
+        <h1>Top 3 Cities by Population</h1>
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+        <h1>Average Population</h1>
+        <p>{{ avg_population }}</p>
+        <h1>Median Population</h1>
+        <p>{{ median_population }}</p>
+    </body>
+</html>
